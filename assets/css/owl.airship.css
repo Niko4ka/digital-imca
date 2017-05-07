@@ -1,0 +1,17 @@
+/*
+* 	Owl Carousel Owl Demo airship 
+*	v1.3.3
+*/
+
+.owl-airship .owl-controls{
+	margin-top: 0;
+	text-align: center;
+}
+
+
+.owl-airship .owl-controls{
+	display: none!important;
+	position: relative;
+	bottom: 200px;
+	z-index: 3;
+}

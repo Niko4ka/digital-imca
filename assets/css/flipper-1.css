@@ -1,0 +1,73 @@
+div.flip-container {
+	perspective: 1000;
+	display: inline-block;
+	position: relative;
+	width: 208px;
+	height: 208px;
+	background-color: transparent;
+}
+
+.flip-container:hover .flipper {
+	transform: rotateY(180deg);
+}
+
+div.flipper {
+	display: inline-block;
+	position: relative;
+	width: 208px;
+	height: 208px;
+	margin: 0;
+}
+
+
+div.front > img {
+	position: absolute;
+	top: 35px;
+	left: 58px;
+}
+
+div.front > h3 {
+	position: absolute;
+	bottom: 15px;
+	font-size: 19px;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.front {
+	z-index: 2;
+}
+
+.back {
+	transform: rotateY(180deg);
+	padding: 7px;
+}
+
+.back p {
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Muller";
+	color: #333333;
+}

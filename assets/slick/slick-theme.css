@@ -1,0 +1,432 @@
+﻿@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+
+    opacity: .35;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+
+.cases-carousel {
+    width: 72%;
+    margin: 0 auto;
+    height: 420px;
+    padding-top: 0;
+}
+
+.my-item {
+    height: auto;
+    margin: 0 30px;
+    padding: 30px;
+}
+
+.my-item a {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: transparent;
+    text-decoration: none;
+    outline: none;
+}
+
+.center .slick-center div {
+    -moz-transform:scale(1.08);
+    -ms-transform:scale(1.08);
+    -o-transform:scale(1.08);
+    -webkit-transform:scale(1.08);
+    opacity:1;
+    transform: scale(1.35);
+}
+
+.item-1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/logo_estiline.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    margin: 30px auto;
+}
+
+.item-2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/logo_music_museum.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    margin: 30px auto;
+}
+
+.item-3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/carskiy_bereg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    margin: 30px auto;
+}
+
+.item-4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/coolnws.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    margin: 30px auto;
+}
+
+.item-5 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/markettravel.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    margin: 30px auto;
+}
+
+.item-6 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/12mes.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    margin: 30px auto;
+}
+
+.item-7 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/steelflex.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%;
+    margin: 30px auto;
+}
+
+.item-8 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/sovplim.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    margin: 30px auto;
+}
+
+.item-9 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/mr-design.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    margin: 30px auto;
+}
+
+.item-10 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/sovplim_lab.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    margin: 30px auto;
+}
+
+.item-11 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/sovPlim2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    margin: 30px auto;
+}
+
+@media all and (max-width: 1300px) {
+    .cases-carousel {
+    width: 950px;
+    margin: 0 auto;
+    height: 420px;
+    padding-top: 0;
+}
+
+.my-item {
+    height: auto;
+    margin: 0 50px;
+    padding: 30px;
+
+}
+
+.my-item a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    color: transparent;
+    text-decoration: none;
+    outline: none;
+}
+
+.my-item a:active {
+    color: transparent;
+    text-decoration: none;
+}
+
+.item-1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/logo_estiline.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/logo_music_museum.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-3 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/carskiy_bereg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+.item-4 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/coolnws.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-5 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/markettravel.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-6 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/12mes.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+.item-7 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/steelflex.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-8 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/sovplim.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-9 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/mr-design.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+.item-10 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/sovplim_lab.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+.item-11 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../images/section6/sovPlim2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+}
