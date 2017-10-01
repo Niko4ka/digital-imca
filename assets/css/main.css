@@ -35,7 +35,8 @@ header {
 	height: 155px;
 	background-image:url('../images/section1/header.jpg');
 	background-size: cover;
-	padding-top: 40px; 
+	padding-top: 40px;
+	padding-bottom: 2px;
 }
 
 div.logo {
